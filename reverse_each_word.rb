@@ -1,7 +1,3 @@
 def reverse_each_word(string)
-array=[]
-array << string
-array.each do |value|
-  value.reverse
-end
+string.split.collect {|word| word.reverse}.join(" ")
 end
